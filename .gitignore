@@ -1,0 +1,7 @@
+# dotenv environment variables file
+.env
+
+# Zenaton files
+zenaton.out
+zenaton.log
+zenaton.err
