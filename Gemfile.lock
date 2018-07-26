@@ -1,7 +1,7 @@
 PATH
   remote: ../zenaton-ruby
   specs:
-    zenaton-ruby (0.1.0)
+    zenaton (0.1.0)
       activesupport
       httparty
       tzinfo-data
@@ -33,7 +33,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  zenaton-ruby!
+  zenaton!
 
 BUNDLED WITH
    1.16.1
