@@ -12,6 +12,6 @@ class ParallelWorkflow < Zenaton::Interfaces::Workflow
       TaskB.new
     ).execute
 
-    TaskC.new
+    TaskC.new.execute
   end
 end
