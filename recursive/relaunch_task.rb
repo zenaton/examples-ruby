@@ -11,7 +11,7 @@ class RelaunchTask < Zenaton::Interfaces::Task
     if @id < @max
       @id += 1
       puts "\nIteration: #{@id}"
-      RecursiveWorkflow.new(@id, @max).execute
+      RecursiveWorkflow.new(@id, @max).dispatch
     end
   end
 end

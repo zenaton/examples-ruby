@@ -22,6 +22,6 @@ class RecursiveWorkflow < Zenaton::Interfaces::Workflow
     end
     SendEventTask.new(@id).dispatch
     Zenaton::Tasks::Wait.new(EndingEvent).execute
-    RelaunchTask.new(@id, @max).dispatch
+    RelaunchTask.new(@id, @max).execute
   end
 end
