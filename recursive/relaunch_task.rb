@@ -10,7 +10,7 @@ class RelaunchTask < Zenaton::Interfaces::Task
   def handle
     if @id < @max
       @id += 1
-      puts "Iteration: #{@id}"
+      puts "\nIteration: #{@id}"
       RecursiveWorkflow.new(@id, @max).execute
     end
   end
