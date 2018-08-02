@@ -8,10 +8,8 @@ class EventWorkflow < Zenaton::Interfaces::Workflow
   include Zenaton::Traits::Zenatonable
 
   def handle
-    [
-      TaskA.new.execute,
-      TaskB.new.execute
-    ]
+    TaskA.new.execute
+    TaskB.new.execute
   end
 
   def on_event(event)

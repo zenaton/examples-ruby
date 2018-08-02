@@ -6,9 +6,7 @@ class AsynchronousWorkflow < Zenaton::Interfaces::Workflow
   include Zenaton::Traits::Zenatonable
 
   def handle
-    [
-      TaskA.new.dispatch,
-      TaskB.new.execute
-    ]
+    TaskA.new.dispatch
+    TaskB.new.execute
   end
 end
