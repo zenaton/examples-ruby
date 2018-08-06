@@ -4,11 +4,7 @@ This repository contains examples of workflows built with Zenaton. These example
 ## Installation
 Download this repo
 ```
-git clone https://github.com/zenaton/examples-ruby.git
-```
-and install dependencies
-```
-cd examples-ruby; bundle install
+git clone https://github.com/zenaton/examples-ruby.git; cd examples-ruby
 ```
 then add an .env file
 ```
@@ -16,6 +12,19 @@ cp .env.example .env
 ```
 and populate it with your application id and api token found [here](https://zenaton.com/app/api).
 
+### Running on Docker
+Simply run
+```
+docker-compose build; docker-compose up
+```
+
+You're all set!
+
+### Running Locally
+Install dependencies
+```
+bundle install
+```
 Then, you need to install a Zenaton worker
 ```
 curl https://install.zenaton.com | sh
