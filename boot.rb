@@ -1,3 +1,6 @@
+# Write to stdout immediately
+STDOUT.sync = true
+
 require './client'
 require './workflows/sequential_workflow'
 require './workflows/parallel_workflow'
