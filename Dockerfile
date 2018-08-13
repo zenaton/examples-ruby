@@ -3,10 +3,7 @@ FROM ruby:jessie
 WORKDIR /app
 
 # Install Zenaton
-RUN apt-get update \
- && apt-get upgrade -y \
- && curl https://install.zenaton.com | sh \
- && apt-get clean
+RUN curl https://install.zenaton.com | sh
 
 # Install dependencies
 ADD Gemfile* ./
