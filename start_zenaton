@@ -2,10 +2,13 @@
 
 set -e
 
+# Make sure dependencies are installed
 bundle check || bundle install
 
+# Start zenaton worker
 zenaton start
 zenaton listen --env=.env --boot=boot.rb
 
+# Print zenaton output to stdout
 touch zenaton.out
 tail -f zenaton.out
