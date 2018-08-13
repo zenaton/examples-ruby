@@ -7,7 +7,7 @@ class DisplayTask < Zenaton::Interfaces::Task
   end
 
   def handle
-    print @counter
+    puts @counter
     sleep 1
   end
 end
