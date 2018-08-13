@@ -7,4 +7,5 @@ bundle check || bundle install
 zenaton start
 zenaton listen --env=.env --boot=boot.rb
 
-tail -f /dev/null
+touch zenaton.out
+tail -f zenaton.out
