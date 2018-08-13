@@ -8,20 +8,16 @@ GEM
       tzinfo (~> 1.1)
     concurrent-ruby (1.0.5)
     dotenv (2.5.0)
-    httparty (0.16.2)
-      multi_xml (>= 0.5.2)
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
     minitest (5.11.3)
-    multi_xml (0.6.0)
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     tzinfo-data (1.2018.5)
       tzinfo (>= 1.0.0)
-    zenaton (0.2.0)
+    zenaton (0.2.3)
       activesupport
-      httparty
       tzinfo-data
 
 PLATFORMS
