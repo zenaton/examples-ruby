@@ -6,6 +6,12 @@ require './events/my_event'
 class WaitEventWorkflow < Zenaton::Interfaces::Workflow
   include Zenaton::Traits::Zenatonable
 
+  attr_reader :id
+
+  def initialize(id)
+    @id = id
+  end
+
   def handle
     event = Zenaton::Tasks::Wait.new(MyEvent).seconds(4).execute
     if event
@@ -13,9 +19,5 @@ class WaitEventWorkflow < Zenaton::Interfaces::Workflow
     else
       TaskB.new.execute
     end
-  end
-
-  def id
-    'MyId'
   end
 end

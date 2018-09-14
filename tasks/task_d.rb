@@ -3,8 +3,10 @@ class TaskD < Zenaton::Interfaces::Task
   include Zenaton::Traits::Zenatonable
 
   def handle
-    puts 'Task D'
+    puts 'Task D starts'
     sleep 9
-    'Task D'
+    puts 'Task D ends'
+
+    3
   end
 end
