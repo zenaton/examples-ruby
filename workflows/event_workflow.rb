@@ -18,15 +18,13 @@ class EventWorkflow < Zenaton::Interfaces::Workflow
   def handle
     TaskA.new.execute
     if @state
-        TaskB.new.execute
+      TaskB.new.execute
     else
-        TaskC.new.execute
+      TaskC.new.execute
     end
   end
 
   def on_event(event)
-    if event.is_a?(MyEvent)
-      @state = false
-    end
+    @state = false if event.is_a?(MyEvent)
   end
 end

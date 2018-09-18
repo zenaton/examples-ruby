@@ -13,10 +13,10 @@ class ParallelWorkflow < Zenaton::Interfaces::Workflow
       TaskB.new
     ).execute
 
-    if (a > b)
-        TaskC.new.execute
+    if a > b
+      TaskC.new.execute
     else
-        TaskD.new.execute
+      TaskD.new.execute
     end
   end
 end

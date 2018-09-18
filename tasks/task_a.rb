@@ -6,7 +6,7 @@ class TaskA < Zenaton::Interfaces::Task
     puts 'Task A starts'
     sleep 3
     puts 'Task A ends'
-    
+
     0
   end
 end

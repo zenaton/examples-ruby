@@ -9,10 +9,10 @@ class SequentialWorkflow < Zenaton::Interfaces::Workflow
   def handle
     a = TaskA.new.execute
 
-    if (0 < a)
-        TaskB.new.execute
+    if a > 0
+      TaskB.new.execute
     else
-        TaskC.new.execute
+      TaskC.new.execute
     end
   end
 end
