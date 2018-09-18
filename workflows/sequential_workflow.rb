@@ -1,6 +1,7 @@
 require './tasks/task_a'
 require './tasks/task_b'
 require './tasks/task_c'
+require './tasks/task_d'
 
 # :nodoc:
 class SequentialWorkflow < Zenaton::Interfaces::Workflow
@@ -14,5 +15,7 @@ class SequentialWorkflow < Zenaton::Interfaces::Workflow
     else
         TaskC.new.execute
     end
+
+    TaskD.new.execute
   end
 end

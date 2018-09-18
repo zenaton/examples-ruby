@@ -1,5 +1,4 @@
 require 'securerandom'
-
 require './client'
 require './workflows/event_workflow'
 require './events/my_event'
