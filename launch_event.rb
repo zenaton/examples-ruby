@@ -1,9 +1,12 @@
+require 'securerandom'
 require './client'
 require './workflows/event_workflow'
 require './events/my_event'
 
-EventWorkflow.new.dispatch
+id = SecureRandom.hex(5)
 
-sleep 1
+EventWorkflow.new(id).dispatch
 
-EventWorkflow.where_id('MyId').send_event(MyEvent.new)
+sleep 2
+
+EventWorkflow.where_id(id).send_event(MyEvent.new)

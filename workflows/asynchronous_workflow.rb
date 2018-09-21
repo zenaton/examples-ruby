@@ -1,5 +1,7 @@
 require './tasks/task_a'
 require './tasks/task_b'
+require './tasks/task_c'
+require './tasks/task_d'
 
 # :nodoc:
 class AsynchronousWorkflow < Zenaton::Interfaces::Workflow
@@ -7,6 +9,8 @@ class AsynchronousWorkflow < Zenaton::Interfaces::Workflow
 
   def handle
     TaskA.new.dispatch
-    TaskB.new.execute
+    TaskB.new.dispatch
+    TaskC.new.execute
+    TaskD.new.execute
   end
 end
