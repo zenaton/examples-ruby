@@ -16,7 +16,7 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2018.5)
       tzinfo (>= 1.0.0)
-    zenaton (0.2.3)
+    zenaton (0.3.0)
       activesupport
       tzinfo-data
 
