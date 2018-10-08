@@ -1,5 +1,5 @@
 require './tasks/task_a'
-require './tasks/task_b'
+require './tasks/task_e'
 require './tasks/task_c'
 
 # :nodoc:
@@ -9,7 +9,7 @@ class ErrorWorkflow < Zenaton::Interfaces::Workflow
   def handle
     Zenaton::Parallel.new(
       TaskA.new,
-      TaskB.new(error: true)
+      TaskE.new
     ).execute
 
     TaskC.new.execute

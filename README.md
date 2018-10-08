@@ -115,7 +115,19 @@ ruby launch_wait.rb
 ruby launch_wait_event.rb
 ```
 
-## Example 7: Recursive Workflow
+## Example 7: Error Workflow
+[This example](https://github.com/zenaton/examples-ruby/tree/master/workflows/error_workflow.rb) showcases
+- how to recover from a faulty task
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_error.png" alt="Error Workflow Diagram" />
+</p>
+
+```ruby
+ruby launch_error.rb
+```
+
+## Example 8: Recursive Workflow
 [This example](https://github.com/zenaton/examples-ruby/tree/master/recursive/recursive_workflow.rb) showcases
 - how launching events or workflows directly from orchestrated tasks allows you to schedule recurring workflows
 
@@ -123,7 +135,7 @@ ruby launch_wait_event.rb
 ruby launch_recursive.rb
 ```
 
-## Example 8: Workflow Versions
+## Example 9: Workflow Versions
 [This example](https://github.com/zenaton/examples-ruby/tree/master/workflows/version_workflow.rb) showcases
 - how to update your workflow implementation, even while previous versions are still running
 
