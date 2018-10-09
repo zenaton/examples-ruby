@@ -120,7 +120,7 @@ ruby launch_wait_event.rb
 - how to recover from a faulty task
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_error.png" alt="Error Workflow Diagram" />
+    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_error.png" alt="Error Workflow Diagram" height="346px"/>
 </p>
 
 ```ruby
