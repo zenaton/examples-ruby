@@ -44,7 +44,11 @@ Your all set!
 - In a sequential task execution, you can get the output of a task. The result of the first task can be used by the second one.
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_sequential.png" alt="Sequential Workflow Diagram" />
+  <img
+    src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_sequential.png"
+    width="400px"
+    alt="Sequential Workflow Diagram"
+  />
 </p>
 
 ```ruby
@@ -57,7 +61,11 @@ ruby launch_sequential.rb
 - a third task that is executed only after *both* first two tasks were processed
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_parallel.png" alt="Parallel Workflow Diagram" />
+  <img
+    src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_parallel.png"
+    width="400px"
+    alt="Parallel Workflow Diagram"
+  />
 </p>
 
 ```ruby
@@ -70,7 +78,11 @@ ruby launch_parallel.rb
 - Then a sequential execution of Task B
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_async.png" alt="Asynchronous Workflow Diagram" />
+  <img
+    src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_async.png"
+    width="400px"
+    alt="Asynchronous Workflow Diagram"
+  />
 </p>
 
 ```ruby
@@ -84,7 +96,11 @@ When a task is dispatched asynchronously, the workflow continues its execution w
 - how to change a workflow's behaviour based on an external event
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_react_event.png" alt="Event Workflow Diagram" />
+  <img
+    src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_react_event.png"
+    width="400px"
+    alt="Event Workflow Diagram"
+  />
 </p>
 
 ```ruby
@@ -96,7 +112,11 @@ ruby launch_event.rb
 - how the provided `Wait` task can be used to pause the workflow for a specified duration
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_wait.png" alt="Wait Workflow Diagram" />
+  <img
+    src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_wait.png"
+    width="400px"
+    alt="Wait Workflow Diagram"
+  />
 </p>
 
 ```ruby
@@ -108,7 +128,11 @@ ruby launch_wait.rb
 - how the provided `Wait` task can also be used to pause the workflow up to receiving a specific external event
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_wait_event.png" alt="WaitEvent Workflow Diagram" />
+  <img
+    src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_wait_event.png"
+    width="400px"
+    alt="WaitEvent Workflow Diagram"
+  />
 </p>
 
 ```ruby
@@ -120,7 +144,11 @@ ruby launch_wait_event.rb
 - how to recover from a faulty task
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_error.png" alt="Error Workflow Diagram" height="346px"/>
+  <img
+    src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_error.png"
+    width="400px"
+    alt="Error Workflow Diagram"
+  />
 </p>
 
 ```ruby
