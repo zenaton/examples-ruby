@@ -46,9 +46,10 @@ Your all set!
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_sequential.png"
-    width="400px"
+    width="324px"
     alt="Sequential Workflow Diagram"
   />
+  <img src="https://user-images.githubusercontent.com/36400935/58274921-30de0800-7d94-11e9-8e01-47d63f341147.gif" width="400px"/>
 </p>
 
 ```ruby
@@ -63,9 +64,10 @@ ruby launch_sequential.rb
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_parallel.png"
-    width="400px"
+    width="324px"
     alt="Parallel Workflow Diagram"
   />
+  <img src="https://user-images.githubusercontent.com/36400935/58277197-751fd700-7d99-11e9-8fff-d7c483c8abaf.gif" width="400px"/>
 </p>
 
 ```ruby
@@ -80,9 +82,10 @@ ruby launch_parallel.rb
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_async.png"
-    width="400px"
+    width="324px"
     alt="Asynchronous Workflow Diagram"
   />
+  <img src="https://user-images.githubusercontent.com/36400935/58277203-78b35e00-7d99-11e9-9ae8-cfa92757623f.gif" width="400px"/>
 </p>
 
 ```ruby
@@ -98,9 +101,10 @@ When a task is dispatched asynchronously, the workflow continues its execution w
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_react_event.png"
-    width="400px"
+    width="324px"
     alt="Event Workflow Diagram"
   />
+  <img src="https://user-images.githubusercontent.com/36400935/58276729-769ccf80-7d98-11e9-8ebc-d70ec82dd73b.gif" width="400px"/>
 </p>
 
 ```ruby
@@ -114,9 +118,10 @@ ruby launch_event.rb
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_wait.png"
-    width="400px"
+    width="324px"
     alt="Wait Workflow Diagram"
   />
+  <img src="https://user-images.githubusercontent.com/36400935/58276731-78669300-7d98-11e9-97b7-fbe0a39ecba0.gif" width="400px"/>
 </p>
 
 ```ruby
@@ -130,9 +135,10 @@ ruby launch_wait.rb
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_wait_event.png"
-    width="400px"
+    width="324px"
     alt="WaitEvent Workflow Diagram"
   />
+  <img src="https://user-images.githubusercontent.com/36400935/58277648-7ac9ec80-7d9a-11e9-9b7b-58ca65809d00.gif" width="400px"/>
 </p>
 
 ```ruby
@@ -146,9 +152,10 @@ ruby launch_wait_event.rb
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_error.png"
-    width="400px"
+    width="324px"
     alt="Error Workflow Diagram"
   />
+  <img src="https://user-images.githubusercontent.com/36400935/58315058-1007c800-7e11-11e9-8bbb-7b1fb8e5bdbb.gif" width="400px"/>
 </p>
 
 ```ruby
