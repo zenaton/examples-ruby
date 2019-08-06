@@ -38,7 +38,15 @@ Your all set!
 
 *Your workflows will be processed by your worker, so you won't see anything except the stdout and stderr, respectively `zenaton.out` and `zenaton.err`. Look at these files :)*
 
-## Example 1 : Sequential tasks execution
+## Example 1 : Single task execution
+[This example](https://github.com/zenaton/examples-ruby/tree/master/tasks/task_a.rb) showcases
+- An execution of a single task
+
+```ruby
+ruby launch_single_task.rb
+```
+
+## Example 2 : Sequential tasks execution
 [This example](https://github.com/zenaton/examples-ruby/tree/master/workflows/sequential_workflow.rb) showcases
 - a sequential execution of three tasks. The second and third tasks are executed only when the previous one is processed.
 - In a sequential task execution, you can get the output of a task. The result of a task can be used by the next one.
@@ -56,7 +64,7 @@ Your all set!
 ruby launch_sequential.rb
 ```
 
-## Example 2: Parallel tasks execution
+## Example 3: Parallel tasks execution
 [This example](https://github.com/zenaton/examples-ruby/tree/master/workflows/parallel_workflow.rb) showcases
 - a parallel execution of 2 tasks
 - a third task that is executed only after *both* first two tasks were processed
@@ -74,7 +82,7 @@ ruby launch_sequential.rb
 ruby launch_parallel.rb
 ```
 
-## Example 3: Asynchronous tasks execution
+## Example 4: Asynchronous tasks execution
 [this example](https://github.com/zenaton/examples-ruby/tree/master/workflows/asynchronous_workflow.rb) showcases
 - Asynchronous executions of Task A and Task B (fire and forget)
 - Then sequential executions of Task C and Task D
@@ -94,7 +102,7 @@ ruby launch_asynchronous.rb
 
 When a task is dispatched asynchronously, the workflow continues its execution without waiting for the task completion. Consequently, a task asynchronous dispatching always returns a null value.
 
-## Example 4: Event
+## Example 5: Event
 [This example](https://github.com/zenaton/examples-ruby/tree/master/workflows/event_workflow.rb) showcases
 - how to change a workflow's behaviour based on an external event
 
@@ -111,7 +119,7 @@ When a task is dispatched asynchronously, the workflow continues its execution w
 ruby launch_event.rb
 ```
 
-## Example 5: Wait
+## Example 6: Wait
 [This example](https://github.com/zenaton/examples-ruby/tree/master/workflows/wait_workflow.rb) showcases
 - how the provided `Wait` task can be used to pause the workflow for a specified duration
 
@@ -128,7 +136,7 @@ ruby launch_event.rb
 ruby launch_wait.rb
 ```
 
-## Example 6: Wait Event
+## Example 7: Wait Event
 [This example](https://github.com/zenaton/examples-ruby/tree/master/workflows/wait_event_workflow.rb) showcases
 - how the provided `Wait` task can also be used to pause the workflow up to receiving a specific external event
 
@@ -145,7 +153,7 @@ ruby launch_wait.rb
 ruby launch_wait_event.rb
 ```
 
-## Example 7: Error Workflow
+## Example 8: Error Workflow
 [This example](https://github.com/zenaton/examples-ruby/tree/master/workflows/error_workflow.rb) showcases
 - how to recover from a faulty task
 
@@ -162,7 +170,7 @@ ruby launch_wait_event.rb
 ruby launch_error.rb
 ```
 
-## Example 8: Recursive Workflow
+## Example 9: Recursive Workflow
 [This example](https://github.com/zenaton/examples-ruby/tree/master/recursive/recursive_workflow.rb) showcases
 - how launching events or workflows directly from orchestrated tasks allows you to schedule recurring workflows
 
@@ -170,7 +178,7 @@ ruby launch_error.rb
 ruby launch_recursive.rb
 ```
 
-## Example 9: Workflow Versions
+## Example 10: Workflow Versions
 [This example](https://github.com/zenaton/examples-ruby/tree/master/workflows/version_workflow.rb) showcases
 - how to update your workflow implementation, even while previous versions are still running
 
