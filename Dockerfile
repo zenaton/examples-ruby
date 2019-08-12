@@ -1,4 +1,4 @@
-FROM ruby:jessie
+FROM ruby:stretch
 
 WORKDIR /app
 
