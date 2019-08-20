@@ -10,5 +10,22 @@ zenaton start
 zenaton listen --env=.env --boot=boot.rb
 
 # Print zenaton output to stdout
-touch zenaton.out
-tail -f zenaton.out
+for filename in ./launch_*; do
+  echo "Testing $filename ..."
+  rm -f zenaton.out
+  touch zenaton.out
+  basename=$(basename "$filename" .rb)
+  ruby $filename
+  sleep 30
+  if cmp --silent ./zenaton.out ./tests/$($basename)_expected_output ; then
+    echo "Command succeeded"
+    exit 0
+  else
+    echo "Tests failed"
+    echo "Expected:"
+    cat ./tests/$($basename)_expected_output
+    echo "Got:"
+    cat ./zenaton.out
+    exit 1
+  fi
+done
