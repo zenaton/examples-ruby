@@ -185,3 +185,12 @@ ruby launch_recursive.rb
 ```ruby
 ruby launch_version.rb
 ```
+
+## Example 11: Automatic retry of failed tasks
+[This example](https://github.com/zenaton/examples-ruby/tree/master/Tasks/task_with_retry.rb) showcases
+- how a failed task can be retried automatically
+- how to customize the automatic retry policy
+ 
+```ruby
+ruby launch_automatic_retry.rb
+```
