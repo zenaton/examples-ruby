@@ -194,3 +194,11 @@ ruby launch_version.rb
 ```ruby
 ruby launch_automatic_retry.rb
 ```
+
+## Example 12: Schedule a task
+[This example](https://github.com/zenaton/examples-ruby/tree/master/schedule_task_a.rb) showcases
+- how to schedule a task to make it run periodically
+
+```ruby
+ruby schedule_task_a.rb
+```
